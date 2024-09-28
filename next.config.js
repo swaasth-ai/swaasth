@@ -18,6 +18,8 @@ module.exports = {
     path: '',
     // domains: ['your-image-source.com'],
   },
+  
+  
 
   // Other Next.js config options
 };
