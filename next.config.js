@@ -5,7 +5,7 @@ module.exports = {
   // Set the base path if your repository is not at the root
   // For example, for GitHub Pages user site (username.github.io), it's '/'
   // For project site, it's '/repository-name'
-  basePath: '/swaasth.ai',
+//  basePath: '/swaasth.ai',
 
   // Enable static export
   output: 'export',
