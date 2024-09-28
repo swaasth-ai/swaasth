@@ -8,7 +8,7 @@ module.exports = {
   basePath: '',
 
   // Enable static export
-  assetPrefix: '.',
+  assetPrefix: './',
   trailingSlash: true,
   output: 'export',
 
@@ -17,6 +17,13 @@ module.exports = {
     loader: 'akamai',
     path: '',
     // domains: ['your-image-source.com'],
+  },
+  exportTrailingSlash: true,
+  async exportPathMap() {
+    return {
+      '/': { page: '/' },
+      // Add more routes if needed
+    };
   },
 
   // Other Next.js config options
