@@ -8,6 +8,7 @@ module.exports = {
 //  basePath: '/swaasth',
 
   // Enable static export
+  trailingSlash: true,
   output: 'export',
 
   // If using images, set the domains
