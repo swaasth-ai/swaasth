@@ -8,12 +8,14 @@ module.exports = {
 //  basePath: '/swaasth',
 
   // Enable static export
+  assetPrefix: '.',
   trailingSlash: true,
   output: 'export',
 
   // If using images, set the domains
   images: {
-    unoptimized: true,
+    loader: 'akamai',
+    path: '',
     // domains: ['your-image-source.com'],
   },
 
