@@ -6,17 +6,17 @@ const Testimonials = () => {
     {
       quote: "Swaasth.ai has transformed the way I manage my patients. The AI-driven insights are invaluable.",
       author: "Dr. Ananya Sharma, General Practitioner",
-      image: "${process.env.NEXT_PUBLIC_BASE_PATH}/images/dr-ananya.jpg", // Add testimonial images in public/images/
+      image: '${process.env.NEXT_PUBLIC_BASE_PATH}/images/dr-ananya.jpg', // Add testimonial images in public/images/
     },
     {
       quote: "Access to quality healthcare from the comfort of my home has never been easier. Thank you, Swaasth.ai!",
       author: "Rajiv Kumar, Patient",
-      image: "${process.env.NEXT_PUBLIC_BASE_PATH}/images/rajiv-kumar.jpg",
+      image: '${process.env.NEXT_PUBLIC_BASE_PATH}/images/rajiv-kumar.jpg',
     },
     {
       quote: "The platform streamlines my administrative tasks, allowing me to focus more on patient care.",
       author: "Dr. Priya Gupta, Specialist",
-      image: "${process.env.NEXT_PUBLIC_BASE_PATH}/images/dr-priya.jpg",
+      image: '${process.env.NEXT_PUBLIC_BASE_PATH}/images/dr-priya.jpg',
     },
   ];
 

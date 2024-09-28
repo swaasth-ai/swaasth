@@ -26,21 +26,21 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <div className="flex flex-col items-center text-center max-w-sm">
-            <Image src={"${process.env.NEXT_PUBLIC_BASE_PATH}/images/feature1.png" alt="Feature 1" width={100} height={100} className="mb-4" />
+            <Image src={'${process.env.NEXT_PUBLIC_BASE_PATH}/images/feature1.png' alt="Feature 1" width={100} height={100} className="mb-4" />
             <h4 className="text-xl font-semibold text-blue-600">Innovative AI Solutions</h4>
             <p className="mt-2 text-gray-600">
               Leveraging artificial intelligence to provide data-driven insights and personalized healthcare solutions.
             </p>
           </div>
           <div className="flex flex-col items-center text-center max-w-sm">
-            <Image src="${process.env.NEXT_PUBLIC_BASE_PATH}/images/feature2.png" alt="Feature 2" width={100} height={100} className="mb-4" />
+            <Image src='${process.env.NEXT_PUBLIC_BASE_PATH}/images/feature2.png' alt="Feature 2" width={100} height={100} className="mb-4" />
             <h4 className="text-xl font-semibold text-blue-600">Comprehensive Care</h4>
             <p className="mt-2 text-gray-600">
               Offering a one-stop platform that integrates diagnostics, treatment, and follow-up care for seamless healthcare experience.
             </p>
           </div>
           <div className="flex flex-col items-center text-center max-w-sm">
-            <Image src="${process.env.NEXT_PUBLIC_BASE_PATH}/images/feature3.png" alt="Feature 3" width={100} height={100} className="mb-4" />
+            <Image src='${process.env.NEXT_PUBLIC_BASE_PATH}/images/feature3.png' alt="Feature 3" width={100} height={100} className="mb-4" />
             <h4 className="text-xl font-semibold text-blue-600">Accessible Anywhere</h4>
             <p className="mt-2 text-gray-600">
               Extending quality healthcare services to remote and underserved regions through telehealth and mobile units.
