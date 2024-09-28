@@ -1,10 +1,7 @@
-// next.config.js
 const path = require('path');
 
 module.exports = {
   // Set the base path if your repository is not at the root
-  // For example, for GitHub Pages user site (username.github.io), it's '/'
-  // For project site, it's '/repository-name'
   basePath: '',
 
   // Enable static export
@@ -12,14 +9,15 @@ module.exports = {
   trailingSlash: true,
   output: 'export',
 
-  // If using images, set the domains
+  // Use default Next.js image configuration
   images: {
-    loader: 'akamai',
-    path: '',
-    // domains: ['your-image-source.com'],
+    unoptimized: true,
+    path: '/', // Path where the images will be served from (root of public folder)
   },
-  
-  
 
-  // Other Next.js config options
+  // Webpack configuration if you need to resolve image paths manually
+  webpack: (config) => {
+    config.resolve.alias['images'] = path.join(__dirname, 'public/images');
+    return config;
+},
 };

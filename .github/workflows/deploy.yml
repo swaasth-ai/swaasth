@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+# Trigger the workflow on pushes to the main branch
+on:
+  push:
+    branches:
+      - main  # Change this if your primary branch has a different name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      # 1. Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # Ensure the token is not persisted to prevent potential issues
+          fetch-depth: 0  # Fetch all history for all branches and tags
+
+      # 2. Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'  # Specify the Node.js version you require
+
+      # 3. Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. Build the Next.js project
+      - name: Build Project
+        run: npm run build
+
+      # 5. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out  # The directory containing the static site
+          publish_branch: gh-pages  # The branch to deploy to
+          force_orphan: true  # Removes existing content in gh-pages before deploying
+          keep_files: false  # Ensures that old files are not retained
