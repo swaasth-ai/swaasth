@@ -37,7 +37,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <Image
-            src='${process.env.NEXT_PUBLIC_BASE_PATH}/images/hero-bg.jpg' // Use a relevant high-quality image
+            src='/images/hero-bg.jpg' // Use a relevant high-quality image
             alt="Healthcare Technology"
             width={500}
             height={400}
