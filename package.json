@@ -1,7 +1,7 @@
 {
-  "name": "swaasth-ai-website",
+  "name": "swaasth.github.io",
   "version": "0.1.0",
-  "homepage": "https://swaasth-ai.github.io/",
+  "homepage": "https://swaasth.github.io/",
   "private": true,
   "scripts": {
     "dev": "next dev",
