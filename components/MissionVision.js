@@ -17,7 +17,7 @@ const MissionVision = () => {
             <FaBullseye size={40} className="text-blue-600 mb-4" />
             <h4 className="text-2xl font-semibold text-blue-600">Our Mission</h4>
             <p className="mt-2 text-gray-600">
-              To provide a comprehensive, AI-powered healthcare ecosystem that bridges the gap between advanced technology and accessible healthcare, ensuring the highest quality of medical care for all.
+            Our mandate is to birth quantum-level innovations that transcend conventional boundaries, enriching lives across multiple realities while honoring our foundational pillars of ethical AI, biomimetic design, and cognitive empathy.
             </p>
           </motion.div>
 
@@ -32,7 +32,7 @@ const MissionVision = () => {
             <FaEye size={40} className="text-blue-600 mb-4" />
             <h4 className="text-2xl font-semibold text-blue-600">Our Vision</h4>
             <p className="mt-2 text-gray-600">
-              To create a future where healthcare is universally accessible, highly efficient, and deeply personalized, empowered by the limitless possibilities of artificial intelligence.
+            To architect a pan-dimension technology ecosystem that amplifies the collective consciousness, propelling humanity into an era of unprecedented growth and interstellar harmony.
             </p>
           </motion.div>
         </div>
