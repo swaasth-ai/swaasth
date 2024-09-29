@@ -1,4 +1,4 @@
-import { FaStethoscope, FaChartLine, FaUniversalAccess, FaUsersCog } from 'react-icons/fa';
+import { FaStethoscope, FaChartLine, FaUniversalAccess, FaUsersCog, FaHeartbeat, FaChalkboardTeacher } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Services = () => {
@@ -23,6 +23,16 @@ const Services = () => {
       title: "Empowering Healthcare Professionals",
       description: "Streamlining administrative tasks and providing continuous learning resources to enhance medical practice.",
     },
+    {
+      icon: <FaHeartbeat size={30} className="text-blue-600" />,
+      title: "Digital Health Monitoring",
+      description: "Real-time health monitoring through wearable devices and remote patient monitoring solutions.",
+    },
+    {
+      icon: <FaChalkboardTeacher size={30} className="text-blue-600" />,
+      title: "Patient Engagement & Education",
+      description: "Interactive tools and educational resources to engage patients in their own health journey.",
+    },
   ];
 
   return (
@@ -30,21 +40,21 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-12"
-          initial={{ opacity:0 }}
-          whileInView={{ opacity:1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
           <h3 className="text-3xl font-semibold text-blue-600">Our Solutions</h3>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
               className="flex items-start"
-              initial={{ opacity:0, y: 50 }}
-              whileInView={{ opacity:1, y:0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
